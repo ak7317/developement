@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level 3</title>
+</head>
+<body>
+    <table border="black">
+        <caption>Food Menu</caption>
+        <thead>
+            <tr>
+                <td>Item</td>
+                <td>Price</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Chips</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>using colspan and rowspan</h1>
+    <table border="black">
+        <caption>Food Menu</caption>
+        <thead>
+            <tr>
+                <th rowspan ="2">Item</th>
+                <th colspan ="2">Price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+                <td>0.14</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>12</td>
+                <td>0.17</td>
+            </tr>
+            <tr>
+                <td>Chips</td>
+                <td>20</td>
+                <td>0.28</td>
+            </tr>
+        </tbody>
+
+    </table>
+    
+    <!-- prcatice Qs-7 -->
+     <h2>practice Qs -7</h2>
+     <table border="black">
+        <caption>A Test Table with merged Celss</caption>
+        <thead>
+            <tr>
+                <td rowspan="2"></td>
+                <th colspan="2">Average</td>
+                <td rowspan="2">Red eyes</td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td>Height</td>
+                <td>Weight</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Males</td>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Females</td>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>45%</td>
+                
+            </tr>
+        </tbody>
+     </table>
+
+     <!-- assignment sol -->
+      <h3>Assignment sol</h3>
+      <table backgroun-color="black" border="black">
+        <caption>Student Information</caption>
+        <tr>
+            <th rowspan="6">Info</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Address</th>
+        </tr>
+        <tr>
+            <th>City</th>
+            <th>House</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>Delhi</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Mumbai</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Kolkata</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>PUne</td>
+            <td>4</td>
+        </tr>
+      </table>
+
+       <!-- form in html -->
+        <h2>form in html</h2>
+      <!-- <form> -->
+        <input type="text" placeholder="enter name">
+      <!-- </form> -->
+       <!-- label -->
+        <br>
+        <label>
+            Enter name:
+            <input type="text" placeholder="name">
+        </label>
+        <br>
+        <br>
+        <form action="/action">
+            <div>
+            <label for="username">username:</label>
+            
+                <input type="text" placeholder="enter your username" id="username" name="username">
+                </div>
+
+                <div>
+            <label for="password">password:</label>
+            <input type="password" placeholder="password" id="password">
+            </div>
+            <div>
+            <label for="age">age:</label>
+            <input type="age" placeholder="enter your age" id="age">
+        </div>
+        <button>submit</button>
+        <button type="submit">submit</button>
+        <button type="button">hello</button>
+        <button type="reset">reset</button>
+        </form>
+        <hr>
+        <form action="https://www.youtube.com/results">
+            <input type="text" placeholder="search in youtube" name="search_query"/>
+            <button>search</button>
+        </form>
+        <h2>practice Qs-8</h2>
+        <form action="https://www.google.com/search">
+            <input type="text" placeholder="search in google" name="q"/>
+            <button>Seach</button>
+
+        </form>
+        <hr>
+         <!-- checkbox -->
+          <form action="/server">
+            <input type="checkbox" id="Age" name="age">
+            <label for="Age">I am 18+</label>
+            <!-- radio button -->
+             <div>
+                <input type="radio" id="apple" name="fruits" value="apple">
+                <label for="apple">Apple</label>
+                <input type="radio" id="mango" name="fruits" value="mango">
+                <label for="mango">mango</label>
+                <input type="radio" id="banana" name="fruits" value="banana">
+                <label for="banana">Banana</label>
+                <input type="radio" id="orange" name="fruits" value="Orange">
+                <label for="orange">Orange</label>
+
+             </div>
+             <!-- select element -->
+             <h2>select element</h2>
+             <div>
+                Choose your profession:
+                <select name="profession" id="profession">
+                    <option>Select your option</option>
+                    <option value="student">Student</option>
+                    <option value="dev">Developer</option>
+
+                </select>
+
+             </div>
+             <button>submit</button>
+             <br>
+              <!-- range element -->
+               <h3>range element</h3>
+               <label for="vol">choose your volume:</label>
+               <input type="range" id="vol" value="volume" min="0" max="100" step="10">
+              <!-- text Area -->
+               <br>
+               <label for="feedback">give your feedback</label>
+               <textarea id="feedback" name="feedback"></textarea>
+             <button>Submit</button>
+          </form>
+
+          <br>
+          <br>
+          <hr>
+          <!-- practice Qs -9 -->
+           <h3>practice Qs -9</h3>
+           <h2>Registration Form</h2>
+           <form action="/server">
+            <div>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            </div>
+            <div>
+            <label for="gender">Please select your gender</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            </div>
+            <div>
+            Do you agree to all terms of service?
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">Yes, I agree</label>
+             </div>
+            
+            <button>Register</button>
+           </form>
+    
+</body>
+</html>
