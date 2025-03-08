@@ -1,0 +1,16 @@
+/* h1{
+    color: red;
+    background-color: aqua;
+} */
+ /* CSS FOR LOGO OF APNA COLLEGE */
+ h1{
+    font-family: League spartan;
+    color: #ffa511;
+    text-align: center;
+    text-size: 55px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.5x normal;
+    text-decoration: teal double underline;
+
+ }
