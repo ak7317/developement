@@ -1,0 +1,25 @@
+i {
+    color: rgb(231, 99, 23);
+}
+span {
+    color: rgba(238, 105, 29, 0.89);
+}
+.card {
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 30px;
+}
+img {
+    width: 100%;
+    border-radius: 25px;
+}
+#pets {
+    display: flex;
+    justify-content: space-evenly;
+}
+h4 {
+    text-align: center;
+    color: #3c787e;
+}
