@@ -8,5 +8,15 @@ app.listen((port), ()=> {
 });
 
 app.use((req,res) => {
-    console.log("new incoming request");
+    console.log("requset received");
+    // console.log(req);
+    res.send("This is a basic responese")
+});
+ app.get("/apple",(req,res) => {
+    console.log("requset received");
+    // console.log(req);
+    res.send("apple patj")
+});
+app.post("/",(req,res) => {
+    res.send("you send a post req to root path ");
 })
